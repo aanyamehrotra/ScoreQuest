@@ -5,17 +5,17 @@ import LoginRegister from './pages/LoginRegister'
 import Quiz from './pages/Quiz'
 import Leaderboard from './pages/Leaderboard'
 import Profile from './pages/Profile'
-import './App.css';
-
+import './App.css'
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<LoginRegister />} />
-      <Route path="/quiz" element={<Quiz />} />
-      <Route path="/leaderboard" element={<Leaderboard />} />
-      <Route path="/profile" element={<Profile />} />
+
+        <Route index element={<Home />} />
+        <Route path="quiz" element={<Quiz />} />
+        <Route path="leaderboard" element={<Leaderboard />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="login" element={<LoginRegister />} />
     </Routes>
   )
 }
